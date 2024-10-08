@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Parse the VOTable file
-votable = parse("A3-result-2.vot")
+votable = parse("gaia_Messier_67-result.vot")
 table = votable.get_first_table()
 
 # Convert the data into a Pandas DataFrame 
