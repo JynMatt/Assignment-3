@@ -56,6 +56,6 @@ plt.title("2MASS J-Ks vs Apparent Ks Magnitude")
 
 # Show the figure
 plt.tight_layout()
-plt.savefig('cmds_M67.png', dpi=200)
+plt.savefig('Figures/cmds_M67.png', dpi=200)
 print("cmds M67.png has been save to your local machine")
 plt.show()
