@@ -1,1 +1,16 @@
+-Discuss where the linear model fits well and where it does not. Use statistical metrics, such as the root mean squares or other goodness-of-fit indicators, to quantify the performance of your linear fit in general and regions with larger residuals.
 
+Overall RMSE: 0.08758016080877418
+Overall R²: 0.8728844904823996
+RMSE (RGal < 10 kpc): 0.045129577455558366
+RMSE (RGal >= 10 kpc): 0.10066205041389101
+
+RMSE shows on average the points deviates from the fit. Hence, lower value indicate a better fit. The RMSE suggest that this fit is a good fit to our linear model in general. Moreover, the R^2 are close to one indicates that 87% of data are in the good fit. However, as we compare the data of fit lesser than 10kpc and more than 10kpc, we able to see that there is a big difference in RMSE which shows that RGal under 10kpc has better fit to the linear model than RGal more than 10kpc whoch suggest that the data spread are much wider above 10kpc. 
+
+-Describe your choice of 2D bins. Discuss what details would be missed with fewer bins or problems encountered with more bins.
+
+I select 80 for both x and y as that is a good number to show all the information of the spiral. When we reduce the bins, we will lose the accuracy and the feature of the spatial resolution. On the other hand, if we increase it too much, we will lose some resolution as some part of the simulation has too low data, where we only can see white spots.
+
+-Analyze the residuals in more detail and propose an explanation for any patterns you observe.
+
+The red regions of positive residuals may likely correspond to spiral arms, where star formation is more active. In these regions, newly formed stars enrich the surrounding gas with metals, leading to higher metallicities than predicted by a simple linear model. The linear fit cannot capture the localised metallicity in spiral arms because it assumes a smooth, radially decreasing metallicity gradient. Thus, it underpredicts the metallicity in these regions. The blue regions on the other hand, shows the negative residuals, particularly in the outer parts of the galaxy, may be explained by metal-poor gas inflow. In many spiral galaxies, metal-poor gas from the intergalactic medium is accreted onto the outer disk, diluting the metallicity. The linear model, which assumes a gradual metallicity decline, overestimates the metallicity in these areas, leading to negative residuals. Additionally, radial migration of older stars from the inner regions could contribute to this pattern. Older stars formed in metal-poor environments might have migrated outward, contributing to a lower metallicity than expected based on the linear fit.
